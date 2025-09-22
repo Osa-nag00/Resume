@@ -1,0 +1,66 @@
+# LaTeX temporary files
+*.aux
+*.log
+*.toc
+*.lof
+*.lot
+*.out
+*.synctex
+*.synctex.gz
+*.synctex(busy)
+*.pdfsync
+*.bbl
+*.bcf
+*.blg
+*.run.xml
+*.fdb_latexmk
+*.fls
+*.dvi
+*.xdv
+*-blx.bib
+
+# BibTeX
+*.bbl
+*.blg
+*-blx.aux
+*-blx.bib
+*.brf
+*.run.xml
+
+# LaTeX Beamer
+*.nav
+*.pre
+*.snm
+*.vrb
+
+# LaTeX glossaries
+*.acn
+*.acr
+*.glg
+*.glo
+*.gls
+*.glsdefs
+*.ist
+
+# Generated PDF files (uncomment if you want to ignore PDFs)
+# *.pdf
+
+# Build directories
+build/
+dist/
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*~
+*.bak
+.DS_Store
+._*
+
+# Latexmk
+.latexmkrc
+
+# Auxiliary and intermediate files
+*.auxlock
+*.ptc
