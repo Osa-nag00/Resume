@@ -193,28 +193,22 @@
 \vspace{0.10 cm}
 \begin{onecolentry}
 	\begin{highlights}
-		\item Developed an AWS Lambda function triggered by S3 uploads to automate
+		\item Developed AWS Lambda functions triggered by S3 bucket uploads to automate
 		ingestion of CSV data into a DynamoDB table
+		\item Created AWS Lambda functions to query data from DynamoDB and perform calculations required for internal API calls from the main application.
+		\item Utilized Terraform as Infrastructure as Code (IaC) to provision, manage, and version AWS resources, enabling reproducible environments and streamlined infrastructure changes.
 		\item Implemented automated validation and peer code review processes within
 		CI/CD pipelines, improving deployment quality and reducing rollback
 		incidents.
 		\item Managed Salesforce orgs (scratch, sandbox, staging, prod), ensuring
 		consistency across environments.
-		\item Developed a TypeScript CLI tool using Salesforce CLI to manage test data
-		lifecycle—automating the cleanup of stale records and bulk upsert of
-		custom sObjects and test users across scratch and sandbox orgs, saving
-		hours per test cycle.
-		\item Created a CLI tool in TypeScript to parse deployment logs from Salesforce
-		deployments and surface actionable alerts in Bitbucket pipelines,
-		accelerating incident response.
+		\item Developed TypeScript CLI tools leveraging Salesforce CLI to automate test data lifecycle management—including cleanup of stale records and bulk upsert of custom sObjects and test users—and to parse deployment logs, surfacing actionable alerts in Bitbucket pipelines. These tools streamlined test cycles and accelerated incident response across scratch and sandbox orgs.
 		\item Migrated legacy Bash automation to TypeScript-based CLI tools, improving
 		extensibility and maintainability through static typing, better tool support,
 		and enhanced collaboration.
 		\item Participated in Agile ceremonies, contributing to sprint planning,
 		retrospectives, and daily stand-ups to ensure alignment with team goals.
 		\item Developed and maintained comprehensive project documentation, facilitating knowledge transfer and onboarding for new team members.
-		\item Designed and implemented monitoring dashboards using AWS CloudWatch and custom metrics, enabling proactive detection of system anomalies.
-		\item Collaborated with cross-functional teams to define and refine requirements.
 	\end{highlights}
 \end{onecolentry}
 
