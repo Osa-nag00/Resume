@@ -139,7 +139,7 @@
         \LenToUnit{\paperwidth-2 cm-0 cm+0.05cm},
         \LenToUnit{\paperheight-1.0 cm}
     ){\vtop{{\null}\makebox[0pt][c]{
-        \small\color{gray}\textit{Last updated in September 2025}\hspace{\widthof{Last updated in September 2025}}
+        \small\color{gray}\textit{Last updated in April 2026}\hspace{\widthof{Last updated in April 2026}}
     }}}%
   }%
 }%
@@ -162,7 +162,7 @@
 	\vspace{5 pt}
 
 	\normalsize
-	\mbox{Orlando, Fl}%
+	\mbox{Orlando, FL}%
 	\kern 5.0 pt%
 	\AND%
 	\kern 5.0 pt%
@@ -174,7 +174,7 @@
 	\kern 5.0 pt%
 	\AND%
 	\kern 5.0 pt%
-	\mbox{\hrefWithoutArrow{https://github.com/Osa-nag00}{https://github.com/Osa-nag00}}%
+	\mbox{\hrefWithoutArrow{https://github.com/Osa-nag00}{github.com/Osa-nag00}}%
 \end{header}
 
 \vspace{6 pt - 0.3 cm}
@@ -193,21 +193,14 @@
 \vspace{0.10 cm}
 \begin{onecolentry}
 	\begin{highlights}
-		\item Developed AWS Lambda functions triggered by S3 bucket uploads to automate
-		ingestion of CSV data into a DynamoDB table
-		\item Created AWS Lambda functions to query data from DynamoDB and perform calculations required for internal API calls from the main application.
-		\item Utilized Terraform as Infrastructure as Code (IaC) to provision, manage, and version AWS resources, enabling reproducible environments and streamlined infrastructure changes.
-		\item Implemented automated validation and peer code review processes within
-		CI/CD pipelines, improving deployment quality and reducing rollback
-		incidents.
-		\item Managed Salesforce orgs (scratch, sandbox, staging, prod), ensuring
-		consistency across environments.
-		\item Developed TypeScript CLI tools leveraging Salesforce CLI to automate test data lifecycle management—including cleanup of stale records and bulk upsert of custom sObjects and test users—and to parse deployment logs, surfacing actionable alerts in Bitbucket pipelines. These tools streamlined test cycles and accelerated incident response across scratch and sandbox orgs.
-		\item Migrated legacy Bash automation to TypeScript-based CLI tools, improving
-		extensibility and maintainability through static typing, better tool support,
-		and enhanced collaboration.
-		\item Participated in Agile ceremonies, contributing to sprint planning,
-		retrospectives, and daily stand-ups to ensure alignment with team goals.
+		\item Built serverless data pipelines using AWS Lambda, automating event-driven CSV ingestion from S3 into DynamoDB and serving calculated results to internal API consumers.
+		\item Managed cloud infrastructure as code using Terraform and OpenTofu, provisioning and versioning AWS resources to ensure reproducible environments and auditable change management.
+		\item Implemented automated validation and peer code review processes within CI/CD pipelines, improving deployment quality and reducing rollback incidents.
+		\item Administered the full Salesforce org lifecycle across scratch, sandbox, staging, and production environments, maintaining environment parity and supporting consistent deployment workflows.
+		\item Migrated legacy Bash automation to TypeScript CLI tools that automate Salesforce test data lifecycle management (bulk upsert, stale record cleanup) and parse deployment logs with actionable alerts in Bitbucket pipelines, reducing test cycle time and accelerating incident response.
+		\item Built a TypeScript automation script to provision 350+ UAT test accounts by ingesting, merging, and transforming data across multiple CSV sources into a unified dataset, then bulk-loading the consolidated records into the application\textemdash{}eliminating manual setup and accelerating go-live readiness.
+		\item Led migration of AWS workloads to GovCloud to meet client-mandated security requirements, validating service compatibility and maintaining environment parity ahead of production go-live.
+		\item Configured and deployed self-hosted GitLab CI/CD runners, enabling controlled pipeline execution within the client's secure infrastructure.
 	\end{highlights}
 \end{onecolentry}
 
@@ -217,19 +210,16 @@
 \begin{twocolentry}{
 		Aug 2023 – Sep 2024
 	}
-	\textbf{Software Engineer I}, University Of Central Florida -- Orlando, FL\end{twocolentry}
+	\textbf{Software Engineer I}, University of Central Florida -- Orlando, FL\end{twocolentry}
 
 \vspace{0.10 cm}
 \begin{onecolentry}
 	\begin{highlights}
-		\item Extended an open-source SQLite project with custom features tailored to
-		research team needs, improving functionality and supporting ongoing
-		development.
+		\item Contributed custom features to an open-source Java WebSocket wrapper for SQLite, extending query capabilities to support research team requirements.
 		\item Integrated Maven and Gradle into Java project workflows, enhancing build
 		efficiency and enabling parallel execution to accelerate development
 		cycles.
-		\item Collaborated with a cross-functional team to modernize a legacy GUI
-		application with JavaFX, improving responsiveness and maintainability.
+		\item Migrated a legacy Java Swing training application to JavaFX, modernizing the UI framework and reducing load times through improved rendering and component architecture.
 		\item Implemented automated testing frameworks using JUnit and Mockito,
 		increasing code coverage and reducing regression defects.
 	\end{highlights}
@@ -260,7 +250,7 @@
 
 \begin{onecolentry}
 	\textbf{Pensacola State College}\\
-	\textit{Associate of arts} \\
+	\textit{Associate of Arts} \\
 	\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
 		\textbf{GPA: 3.8/4.0} & \textit{Aug 2019 -- May 2021} \\
 	\end{tabular*}
@@ -276,7 +266,7 @@
 \vspace{0.2 cm}
 
 \begin{onecolentry}
-	\textbf{Technologies:} AWS (Lambda, S3, DynamoDB, IAM, CloudWatch), Salesforce (SOQL, CLI, scratch orgs, sandbox management), Bitbucket Pipelines, Git, Maven, Gradle, JUnit, Mockito, JavaFX, SQLite, TypeScript, JavaScript, Node.js, Bash, CI/CD, Agile
+	\textbf{Technologies:} AWS (Lambda, S3, DynamoDB, IAM, CloudWatch, GovCloud), Salesforce (SOQL, CLI, scratch orgs, sandbox management), Terraform, OpenTofu, Bitbucket Pipelines, GitLab CI/CD, Git, Maven, Gradle, JUnit, Mockito, JavaFX, SQLite, Node.js
 \end{onecolentry}
 
 
